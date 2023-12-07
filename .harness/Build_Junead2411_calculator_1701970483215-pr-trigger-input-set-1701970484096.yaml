@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Junead2411_calculator_1701970483215-pr-trigger-input-set
+  identifier: Build_Junead2411_calculator_1701970483215prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: project1
+  pipeline:
+    identifier: Build_Junead2411_calculator_1701970483215
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
