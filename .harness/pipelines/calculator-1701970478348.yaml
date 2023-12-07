@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_Junead2411_calculator_1701970483215
+  name: Build calculator
+  orgIdentifier: default
+  projectIdentifier: project1
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1701970453837
+        repoName: Junead2411/calculator
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
