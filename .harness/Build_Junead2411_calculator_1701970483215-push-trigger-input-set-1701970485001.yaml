@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Junead2411_calculator_1701970483215-push-trigger-input-set
+  identifier: Build_Junead2411_calculator_1701970483215pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: project1
+  pipeline:
+    identifier: Build_Junead2411_calculator_1701970483215
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
